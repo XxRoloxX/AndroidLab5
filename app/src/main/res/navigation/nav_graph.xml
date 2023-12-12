@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/primaryFragment">
+
+    <fragment
+        android:id="@+id/list2Fragment"
+        android:name="com.example.laboratory7exercise.List2Fragment"
+        android:label="Item list"
+        tools:layout="@layout/fragment_list2" >
+        <action
+            android:id="@+id/swipeFragment"
+            app:destination="@id/swipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/primaryFragment"
+        android:name="com.example.laboratory7exercise.PrimaryFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_primary" >
+        <action
+            android:id="@+id/primaryFragment"
+            app:destination="@id/primaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/swipeFragment"
+        android:name="com.example.laboratory7exercise.SwipeFragment"
+        android:label="Preferences"
+        tools:layout="@layout/fragment_swipe" >
+        <action
+            android:id="@+id/swipeFragment"
+            app:destination="@id/swipeFragment" />
+    </fragment>
+</navigation>
