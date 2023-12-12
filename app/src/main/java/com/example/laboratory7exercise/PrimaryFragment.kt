@@ -50,20 +50,20 @@ class PrimaryFragment : Fragment() {
     }
     private fun loadPreferences(view:View){
         val data = getPreferences()
-        var name = data.getString("name", "")
-        val surname = data.getString("surname", "")
+//        var name = data.getString("name", "")
+//        val surname = data.getString("surname", "")
         val image = data.getInt("profile_image", R.drawable.pineapple)
 
-        getNameField(view).text = name
-        getSurnameField(view).text = surname
+//        getNameField(view).text = name
+//        getSurnameField(view).text = surname
         getProfileImage(view).setImageResource(image)
     }
-    private fun getNameField(view:View):TextView{
-        return view.findViewById(R.id.primary_fragment_name)
-    }
-    private fun getSurnameField(view:View):TextView{
-        return view.findViewById(R.id.primary_fragment_surname)
-    }
+//    private fun getNameField(view:View):TextView{
+//        return view.findViewById(R.id.primary_fragment_name)
+//    }
+//    private fun getSurnameField(view:View):TextView{
+//        return view.findViewById(R.id.primary_fragment_surname)
+//    }
     private fun getProfileImage(view:View):ImageView{
         return view.findViewById(R.id.profile_fragment_image)
     }

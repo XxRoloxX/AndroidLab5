@@ -39,15 +39,15 @@ class SwipeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val vPager = requireActivity().findViewById<View>(R.id.vpager) as ViewPager2
         vPager.adapter = vpAdapter
-        val tabLayout = requireActivity().findViewById<View>(R.id.tab_layout) as TabLayout
-        TabLayoutMediator(tabLayout, vPager
-            ) { tab, position ->
-            if(position==0){
-                tab.text = "Name"
-            }else if(position==1){
-                tab.text = "Image"
-            }
-        }.attach()
+//        val tabLayout = requireActivity().findViewById<View>(R.id.tab_layout) as TabLayout
+//        TabLayoutMediator(tabLayout, vPager
+//            ) { tab, position ->
+//            if(position==0){
+//                tab.text = "Name"
+//            }else if(position==1){
+//                tab.text = "Image"
+//            }
+//        }.attach()
     }
 
 
